@@ -13,6 +13,7 @@ import { User } from "../../../../entities/User";
 const SearchFilterComponent = () => {
   const { handleSelectUser, state, handleChangeSearch } = useMainContext();
   const { user, userId, search } = state;
+  
   return (
     <div className="w-full xl:w-full flex flex-col space-y-4 xl:flex-row xl:justify-between">
       <div className="w-2/3 lg:w-1/3">

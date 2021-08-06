@@ -14,6 +14,7 @@ import { Empty } from "../../components/Empty";
 const AlbumPhotoComponent: React.FC = () => {
   const { removePhotoFromFavorite, state } = useFavoriteContext();
   const { albumDetailWithFavoritePhotos: album } = state;
+
   return (
     <div className="w-full flex flex-col space-y-10">
       {album.map((item: AlbumAndPhoto, index) => {

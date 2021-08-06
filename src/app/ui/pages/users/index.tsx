@@ -58,6 +58,7 @@ const AlbumCard: React.FC<{ item: Album }> = ({ item }) => {
   const handleSelectAlbum = (id: number) => {
     history.push(`/album/${id}`);
   };
+
   return (
     <div
       style={{ backgroundColor: ColorGenerator() }}
@@ -97,13 +98,16 @@ const AlbumListComponent = () => {
     </div>
   );
 };
+
 const WrapperUserWithContext = () => {
   const { usersId }: any = useParams();
   const { getUserDetailById, state } = useUserContext();
   const { isLoading } = state;
+
   useEffect(() => {
     getUserDetailById(usersId);
   }, []);
+
   return (
     <If condition={isLoading}>
       <Then>
@@ -124,6 +128,7 @@ const WrapperUserWithContext = () => {
     </If>
   );
 };
+
 const Users = () => {
   return (
     <UserController.Provider>

@@ -41,6 +41,7 @@ const initialState = {
   handleChangeInput: () => {},
   handleAddComment: () => {},
 };
+
 const Context = React.createContext<InitialState>(initialState);
 const { Provider: AlbumProvider } = Context;
 

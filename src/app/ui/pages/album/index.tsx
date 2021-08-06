@@ -8,8 +8,10 @@ import { Wrapper } from "../../components/Wrapper";
 import AlbumController, { useAlbumContext } from "../../controller/album";
 import { ReactComponent as StartIcon } from "../../assets/svg/star.svg";
 import { ReactComponent as NotesIcon } from "../../assets/svg/notes.svg";
+
 const AlbumDetails: React.FC = () => {
   const { albumDetail, userDetail } = useAlbumContext().state;
+
   return (
     <div className="w-full flex justify-between">
       <h1 className="capitalize text-lg font-semibold tracking-wider">
@@ -33,10 +35,11 @@ const AlbumDetails: React.FC = () => {
     </div>
   );
 };
+
 const RenderAlbumDetail: React.FC = () => {
-  const { handleSetFavoritePhoto, state, handleChangeInput, handleAddComment } =
-    useAlbumContext();
+  const { handleSetFavoritePhoto, state, handleChangeInput, handleAddComment } = useAlbumContext();
   const { photoDataByAlbumId } = state;
+
   return (
     <div className="grid grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 lg:gap-8">
       {photoDataByAlbumId.map((item: Photo, idx) => {

@@ -24,6 +24,7 @@ const initialState = {
   },
   getUserDetailById: () => {},
 };
+
 const Context = React.createContext<InitialState>(initialState);
 const { Provider: UserProvider } = Context;
 
