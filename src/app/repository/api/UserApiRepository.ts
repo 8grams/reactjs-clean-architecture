@@ -19,7 +19,7 @@ export class UserApiRepository implements UserRepositoryInterface {
     this.endpoints = endpoints;
   }
 
-  public async getAllusers(): Promise<User[]> {
+  public async getAllUsers(): Promise<User[]> {
     const dataResponse = await this.apiService.invoke(
       "get",
       this.endpoints.users()

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { If, Then, Else } from "react-if";
 import { useHistory, useParams } from "react-router";
-import { Album } from "../../../entities/Album";
+import { Album } from "../../../../entities/Album";
 import UserController, { useUserContext } from "../../controller/user";
 import UserPng from "../../assets/png/Profile.png";
-import { ColorGenerator } from "../../../app/misc/Color";
+import { ColorGenerator } from "../../../misc/Color";
 import { Link } from "react-router-dom";
 import { Loading } from "../../components/Loading";
 const UserDetailComponent = () => {

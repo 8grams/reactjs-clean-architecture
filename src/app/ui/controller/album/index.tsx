@@ -1,18 +1,18 @@
 import React from "react";
-import { UserPresenter } from "../../../data/Presenters/UserPresenter";
+import { UserPresenter } from "../../../../data/presenters/UserPresenter";
 import { container } from "tsyringe";
-import { AlbumPresenter } from "../../../data/Presenters/AlbumPresenter";
-import { Album } from "../../../entities/Album";
-import { User } from "../../../entities/User";
+import { AlbumPresenter } from "../../../../data/presenters/AlbumPresenter";
+import { Album } from "../../../../entities/Album";
+import { User } from "../../../../entities/User";
 import { useParams } from "react-router";
-import { PhotoPresenter } from "../../../data/Presenters/PhotoPresenter";
-import { Photo } from "../../../entities/Photo";
+import { PhotoPresenter } from "../../../../data/presenters/PhotoPresenter";
+import { Photo } from "../../../../entities/Photo";
 import {
   getPhotoFromLocal,
   setPhotoToLocal,
   setCommentToLocal,
   getCommentFromLocal,
-} from "../../../app/misc/Storage";
+} from "../../../misc/Storage";
 
 interface IState {
   isLoading: boolean;

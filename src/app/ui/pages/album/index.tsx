@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Else, If, Then } from "react-if";
 import { Link } from "react-router-dom";
-import { Photo } from "../../../entities/Photo";
+import { Photo } from "../../../../entities/Photo";
 import { Loading } from "../../components/Loading";
 import { PageTitle } from "../../components/PageTitle";
 import { Wrapper } from "../../components/Wrapper";

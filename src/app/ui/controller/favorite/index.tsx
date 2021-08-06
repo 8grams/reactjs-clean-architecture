@@ -1,10 +1,10 @@
 import React from "react";
 import { container } from "tsyringe";
-import { AlbumPresenter } from "../../../data/Presenters/AlbumPresenter";
-import { Album } from "../../../entities/Album";
-import { PhotoPresenter } from "../../../data/Presenters/PhotoPresenter";
-import { Photo } from "../../../entities/Photo";
-import { getPhotoFromLocal, setPhotoToLocal } from "../../../app/misc/Storage";
+import { AlbumPresenter } from "../../../../data/presenters/AlbumPresenter";
+import { Album } from "../../../../entities/Album";
+import { PhotoPresenter } from "../../../../data/presenters/PhotoPresenter";
+import { Photo } from "../../../../entities/Photo";
+import { getPhotoFromLocal, setPhotoToLocal } from "../../../misc/Storage";
 import _ from "lodash";
 
 export interface AlbumAndPhoto {

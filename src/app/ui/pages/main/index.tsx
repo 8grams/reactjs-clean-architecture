@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Else, If, Then } from "react-if";
 import { Link, useHistory } from "react-router-dom";
-import { Main as MainEntity } from "../../../entities/Main";
+import { Main as MainEntity } from "../../../../entities/Main";
 import { Loading } from "../../components/Loading";
 import { PageTitle } from "../../components/PageTitle";
 import { Wrapper } from "../../components/Wrapper";
 import MainController, { useMainContext } from "../../controller/main";
 import { ReactComponent as StartIcon } from "../../assets/svg/star.svg";
-import { ColorGenerator } from "../../../app/misc/Color";
-import { User } from "../../../entities/User";
+import { ColorGenerator } from "../../../misc/Color";
+import { User } from "../../../../entities/User";
 
 const SearchFilterComponent = () => {
   const { handleSelectUser, state, handleChangeSearch } = useMainContext();

@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import React from "react";
 import ReactDOM from "react-dom";
-import "./views/assets/css/index.css";
+import "./app/ui/assets/css/index.css";
 import Routes from "./router";
 import reportWebVitals from "./reportWebVitals";
 import { AppComponent } from "./app/di/AppComponent";

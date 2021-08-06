@@ -3,9 +3,9 @@ import { UserApiRepository } from "../repository/api/UserApiRepository";
 import { AlbumApiRepository } from "../repository/api/AlbumApiRepository";
 import { PhotoApiRepository } from "../repository/api/PhotoApiRepository";
 
-import { UserPresenter } from "../../data/Presenters/UserPresenter";
-import { AlbumPresenter } from "../../data/Presenters/AlbumPresenter";
-import { PhotoPresenter } from "../../data/Presenters/PhotoPresenter";
+import { UserPresenter } from "../../data/presenters/UserPresenter";
+import { AlbumPresenter } from "../../data/presenters/AlbumPresenter";
+import { PhotoPresenter } from "../../data/presenters/PhotoPresenter";
 
 export class PresenterModule {
   public static init(container: DependencyContainer) {

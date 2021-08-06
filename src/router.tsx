@@ -1,8 +1,8 @@
 import { Switch, BrowserRouter, Route } from "react-router-dom";
-import Home from "./views/pages/main";
-import AlbumDetails from "./views/pages/album";
-import Users from "./views/pages/users";
-import Favorites from "./views/pages/favorites";
+import Home from "./app/ui/pages/main";
+import AlbumDetails from "./app/ui/pages/album";
+import Users from "./app/ui/pages/users";
+import Favorites from "./app/ui/pages/favorites";
 
 export const routes = [
   {

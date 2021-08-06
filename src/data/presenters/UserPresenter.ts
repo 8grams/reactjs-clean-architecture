@@ -10,7 +10,7 @@ export class UserPresenter {
   }
 
   public getAllUsersPresenter(): Promise<User[]> {
-    return this.repository.getAllusers();
+    return this.repository.getAllUsers();
   }
 
   public getUserByIdPresenter(userId: number): Promise<User> {

@@ -1,9 +1,9 @@
 import React from "react";
-import { UserPresenter } from "../../../data/Presenters/UserPresenter";
+import { UserPresenter } from "../../../../data/presenters/UserPresenter";
 import { container } from "tsyringe";
-import { User } from "../../../entities/User";
-import { AlbumPresenter } from "../../../data/Presenters/AlbumPresenter";
-import { Album } from "../../../entities/Album";
+import { User } from "../../../../entities/User";
+import { AlbumPresenter } from "../../../../data/presenters/AlbumPresenter";
+import { Album } from "../../../../entities/Album";
 
 interface IState {
   isLoading: boolean;

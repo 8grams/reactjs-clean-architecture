@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { If, Then, Else } from "react-if";
-import { Photo } from "../../../entities/Photo";
+import { Photo } from "../../../../entities/Photo";
 import { Loading } from "../../components/Loading";
 import { PageTitle } from "../../components/PageTitle";
 import { Wrapper } from "../../components/Wrapper";
